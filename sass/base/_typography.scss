@@ -4,3 +4,20 @@ body {
   letter-spacing: 0px;
   line-height: 1.5;
 }
+
+.heading-primary {
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: var(--color-white);
+  margin-top: 4rem;
+  margin-bottom: 4px;
+}
+
+.heading-fifth {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
