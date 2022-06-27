@@ -16,9 +16,17 @@ const bannerItem = document.querySelectorAll('.banner__item');
 const selectedFlag = document.querySelector(".banner__selected-flag");
 const selectedCode = document.querySelector(".banner__selected-dial-code");
 
+
 bannerCountry.addEventListener('click', () => {
     bannerCountry.classList.toggle('banner__country--open');
     bannerList.classList.toggle('banner__list--open');
+})
+
+window.addEventListener('click', (e) => {
+    if (!e.target.closest('.banner__country')) {
+        bannerCountry.classList.remove('banner__country--open');
+        bannerList.classList.remove('banner__list--open');
+    }
 })
 
 bannerItem.forEach((item) => {
