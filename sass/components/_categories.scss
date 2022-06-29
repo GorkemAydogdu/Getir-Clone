@@ -1,5 +1,7 @@
 .categories {
   padding: 2.4rem 0;
+  background-color: var(--color-white);
+  box-shadow: rgba(88, 63, 181, 0.08) 0px 2px 16px;
 
   &__group {
     display: flex;
