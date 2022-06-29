@@ -163,6 +163,30 @@
     transform: translateY(-25px);
   }
 
+  &__notification {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    fill: var(--color-red);
+
+    &--open {
+      display: block;
+    }
+  }
+
+  &__message {
+    display: none;
+    font-size: 1.2rem;
+    color: var(--color-red);
+    &--open {
+      display: inline-block;
+    }
+  }
+
   //BUTTON
   &__button {
     margin-top: 4px;
