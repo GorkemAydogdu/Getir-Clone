@@ -1,0 +1,149 @@
+.footer {
+  background-color: var(--color-white);
+  margin-top: 5.6rem;
+
+  &__flex {
+    display: flex;
+  }
+
+  &__group {
+    &:not(:last-child) {
+      flex: 1 1 0%;
+    }
+    margin-right: 2.4rem;
+    padding: 4rem 0 2rem;
+  }
+
+  &__header {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      padding-bottom: 1.6rem;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--color-black);
+    text-decoration: none;
+  }
+
+  &__etbisLink {
+    padding: 1.6rem;
+    border-radius: 8px;
+    background-color: var(--color-white);
+    box-shadow: 0px 1px 6px rgba(105, 116, 136, 0.15);
+  }
+
+  &__etbis {
+    width: 7.2rem;
+    height: 8.4rem;
+  }
+
+  &__social-copyright {
+    display: flex;
+    padding: 2.4rem 0;
+    align-items: center;
+    border-top: 1px solid var(--color-white-dark);
+  }
+
+  &__copyright {
+    margin-right: auto;
+  }
+
+  &__copyrightText {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-right: 1.2rem;
+    color: var(--color-gray-dark);
+  }
+  &__info {
+    &::before {
+      content: '•';
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      margin-right: 1.2rem;
+    }
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 3.2rem;
+    height: 3.2rem;
+    transition: all 200ms;
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      background-color: var(--color-white-dark);
+    }
+  }
+
+  &__social-item:hover &__social-link {
+    color: var(--color-secondary);
+  }
+
+  &__social-link {
+    transition: all 200ms;
+
+    color: var(--color-gray-storm);
+    font-size: 2.4rem;
+  }
+
+  &__language {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--color-white-dark);
+    border-radius: 8px;
+    height: 3.2rem;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    color: var(--color-gray-storm);
+    transition: all 200ms;
+
+    &:hover {
+      background-color: var(--color-white-dark);
+      color: var(--color-primary);
+    }
+  }
+
+  &__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: currentColor;
+  }
+}
