@@ -3,6 +3,14 @@
   height: 4.5rem;
   display: flex;
 
+  @include respond(tab-land) {
+    padding: 0 3.2rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 1.6rem;
+  }
+
   &__flex {
     display: flex;
     align-items: center;
@@ -69,6 +77,10 @@
     font-size: 1.4rem;
     font-weight: 500;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      padding: 6px;
+    }
   }
 
   &__icon {
@@ -76,5 +88,13 @@
     height: 2rem;
     fill: var(--color-primary-light);
     margin: 8px;
+  }
+
+  @include respond(tab-port) {
+    &__button {
+      span {
+        display: none;
+      }
+    }
   }
 }

@@ -2,6 +2,10 @@
   background-color: var(--color-white);
   margin-top: 5.6rem;
 
+  @include respond(tab-land) {
+    padding: 0 3.2rem;
+  }
+
   &__flex {
     display: flex;
   }
@@ -12,6 +16,12 @@
     }
     margin-right: 2.4rem;
     padding: 4rem 0 2rem;
+
+    @include respond(tab-port) {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 
   &__header {

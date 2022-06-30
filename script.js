@@ -77,11 +77,12 @@ async function getData() {
 function createCategories(data) {
     const html = `
     <div class="categories__item">
-    <img
-      class="categories__photo"
-      src="${data.image}"
-      alt="${data.title}"
+    <div class="categories__photo">
+        <img
+        src="${data.image}"
+        alt="${data.title}"
     />
+    </div>
     <span class="categories__name">${data.title}</span>
   </div>
     `;

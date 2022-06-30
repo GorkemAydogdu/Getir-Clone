@@ -30,6 +30,12 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 81.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
 body {
   box-sizing: border-box;
   background-color: var(--color-gray-background);
@@ -92,8 +98,26 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 81.25em) {
+  .banner__flex {
+    padding: 0 3.2rem !important;
+  }
+}
+
+@media only screen and (max-width: 81.25em) {
+  .banner__flex {
+    padding: 0 1.6rem !important;
+  }
+}
+
 .banner__left {
   width: 30rem;
+}
+
+@media only screen and (max-width: 81.25em) {
+  .banner__left {
+    width: auto;
+  }
 }
 
 .banner__logo {
@@ -102,6 +126,7 @@ body {
 }
 
 .banner__right {
+  flex-shrink: 0;
   padding: 2.4rem;
   border-radius: 8px;
   width: 40rem;
@@ -296,17 +321,45 @@ body {
   margin: 3.2rem 0 2.4rem;
 }
 
+@media only screen and (max-width: 81.25em) {
+  .campaigns {
+    padding: 0 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .campaigns {
+    padding: 0 1.6rem;
+  }
+}
+
 .campaigns__flex {
   display: flex;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .campaigns__flex {
+    flex-wrap: wrap;
+  }
+}
+
 .campaigns__group {
+  display: flex;
   width: 40rem;
   height: 20rem;
 }
 
 .campaigns__group:not(:first-child) {
   margin-left: 2.4rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .campaigns__group:nth-child(2) {
+    margin-left: auto;
+  }
+  .campaigns__group:last-child {
+    margin: 2rem auto;
+  }
 }
 
 .campaigns__group img {
@@ -321,12 +374,30 @@ body {
   box-shadow: rgba(88, 63, 181, 0.08) 0px 2px 16px;
 }
 
+@media only screen and (max-width: 81.25em) {
+  .categories {
+    padding: 2.4rem 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 81.25em) {
+  .categories {
+    padding: 2.4rem 1.6rem;
+  }
+}
+
 .categories__group {
   display: flex;
   flex-wrap: wrap;
   row-gap: 1.6rem;
   width: 100%;
   max-width: 125rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .categories__group {
+    row-gap: 0;
+  }
 }
 
 .categories__item {
@@ -337,6 +408,7 @@ body {
   width: calc(100% / 10 - 1.6rem);
   padding: 0.8rem 0 2rem;
   transition: all 0.2s;
+  border-radius: 4px;
 }
 
 .categories__item:not(:last-child) {
@@ -345,6 +417,12 @@ body {
 
 .categories__item:hover {
   background-color: var(--color-white-dark);
+}
+
+@media only screen and (max-width: 62.5em) {
+  .categories__item {
+    width: calc(100% / 5 - 1.6rem);
+  }
 }
 
 .categories__item:hover .categories__name {
@@ -358,12 +436,25 @@ body {
   height: 4.8rem;
 }
 
+.categories__photo img {
+  width: 100%;
+  height: 100%;
+}
+
 .categories__name {
+  min-height: 4rem;
+  text-align: center;
   font-size: 1.4rem;
   font-weight: 600;
   margin-top: 1.2rem;
   color: var(--color-gray-dark);
   transition: all 0.2s;
+}
+
+@media only screen and (max-width: 81.25em) {
+  .description {
+    width: 95% !important;
+  }
 }
 
 .description__flex {
@@ -413,6 +504,12 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 81.25em) {
+  .mobile {
+    width: 95% !important;
+  }
+}
+
 .mobile__flex {
   width: 100%;
   display: flex;
@@ -448,14 +545,34 @@ body {
 }
 
 .mobile__right {
+  width: 60.5rem;
+  height: 28.8rem;
   position: absolute;
   right: 0;
   bottom: -5px;
 }
 
+@media only screen and (max-width: 81.25em) {
+  .mobile__right {
+    margin-left: 65rem;
+    right: initial;
+  }
+}
+
+.mobile__right img {
+  width: 100%;
+  height: 100%;
+}
+
 .footer {
   background-color: var(--color-white);
   margin-top: 5.6rem;
+}
+
+@media only screen and (max-width: 81.25em) {
+  .footer {
+    padding: 0 3.2rem;
+  }
 }
 
 .footer__flex {
@@ -469,6 +586,12 @@ body {
 
 .footer__group:not(:last-child) {
   flex: 1 1 0%;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .footer__group:last-child {
+    display: none;
+  }
 }
 
 .footer__header {
@@ -609,6 +732,18 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 81.25em) {
+  .header {
+    padding: 0 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .header {
+    padding: 0 1.6rem;
+  }
+}
+
 .header__flex {
   display: flex;
   align-items: center;
@@ -674,11 +809,23 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .header__button {
+    padding: 6px;
+  }
+}
+
 .header__icon {
   width: 2rem;
   height: 2rem;
   fill: var(--color-primary-light);
   margin: 8px;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .header__button span {
+    display: none;
+  }
 }
 
 .container {

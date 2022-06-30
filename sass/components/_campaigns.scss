@@ -1,16 +1,39 @@
 .campaigns {
   margin: 3.2rem 0 2.4rem;
 
+  @include respond(tab-land) {
+    padding: 0 3.2rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 1.6rem;
+  }
+
   &__flex {
     display: flex;
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+    }
   }
 
   &__group {
+    display: flex;
     width: 40rem;
     height: 20rem;
 
     &:not(:first-child) {
       margin-left: 2.4rem;
+    }
+
+    @include respond(tab-port) {
+      &:nth-child(2) {
+        margin-left: auto;
+      }
+
+      &:last-child {
+        margin: 2rem auto;
+      }
     }
 
     img {

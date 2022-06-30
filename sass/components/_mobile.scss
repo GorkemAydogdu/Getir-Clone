@@ -5,6 +5,10 @@
   border-radius: 8px;
   display: flex;
 
+  @include respond(tab-land) {
+    width: 95% !important;
+  }
+
   &__flex {
     width: 100%;
     display: flex;
@@ -42,8 +46,20 @@
   }
 
   &__right {
+    width: 60.5rem;
+    height: 28.8rem;
     position: absolute;
     right: 0;
     bottom: -5px;
+
+    @include respond(tab-land) {
+      margin-left: 65rem;
+      right: initial;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

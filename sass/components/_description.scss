@@ -1,7 +1,10 @@
 .description {
+  @include respond(tab-land) {
+    width: 95% !important;
+  }
+
   &__flex {
     margin-top: 5.6rem;
-
     display: flex;
   }
 
