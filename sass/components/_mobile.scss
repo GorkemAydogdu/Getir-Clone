@@ -1,0 +1,49 @@
+.mobile {
+  background-color: var(--color-primary);
+  background-image: url('https://getir.com/_next/static/images/doodle-d659f9f1fd505c811c2331fe3ffddd5f.png');
+  min-height: 31.2rem;
+  border-radius: 8px;
+  display: flex;
+
+  &__flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.8rem;
+    margin-right: auto;
+  }
+
+  &__description {
+    max-width: 36rem;
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: var(--color-white);
+  }
+
+  &__list {
+    padding-top: 3.2rem;
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+  }
+}

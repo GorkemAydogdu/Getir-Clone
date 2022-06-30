@@ -47,6 +47,13 @@ body {
   margin-bottom: 4px;
 }
 
+.heading-secondary {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 3.4rem;
+}
+
 .heading-fifth {
   color: var(--color-primary);
   font-size: 1.6rem;
@@ -282,7 +289,7 @@ body {
 }
 
 .campaigns {
-  margin-top: 3.2rem;
+  margin: 3.2rem 0 2.4rem;
 }
 
 .campaigns__flex {
@@ -290,12 +297,16 @@ body {
 }
 
 .campaigns__group {
-  width: 41.6rem;
+  width: 40rem;
   height: 20rem;
 }
 
+.campaigns__group:not(:first-child) {
+  margin-left: 2.4rem;
+}
+
 .campaigns__group img {
-  width: 40rem;
+  width: 100%;
   height: 100%;
   border-radius: 8px;
 }
@@ -348,6 +359,54 @@ body {
   margin-top: 1.2rem;
   color: var(--color-gray-dark);
   transition: all 0.2s;
+}
+
+.mobile {
+  background-color: var(--color-primary);
+  background-image: url("https://getir.com/_next/static/images/doodle-d659f9f1fd505c811c2331fe3ffddd5f.png");
+  min-height: 31.2rem;
+  border-radius: 8px;
+  display: flex;
+}
+
+.mobile__flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile__left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4.8rem;
+  margin-right: auto;
+}
+
+.mobile__description {
+  max-width: 36rem;
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: var(--color-white);
+}
+
+.mobile__list {
+  padding-top: 3.2rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.mobile__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.mobile__right {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
 }
 
 .header {
