@@ -37,6 +37,10 @@
     padding-top: 3.2rem;
     list-style-type: none;
     display: flex;
+
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -55,6 +59,10 @@
     @include respond(tab-land) {
       margin-left: 65rem;
       right: initial;
+    }
+
+    @include respond(phone) {
+      display: none;
     }
 
     img {

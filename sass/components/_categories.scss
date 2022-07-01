@@ -11,6 +11,10 @@
     padding: 2.4rem 1.6rem;
   }
 
+  @include respond(phone) {
+    padding: 2.4rem 6px;
+  }
+
   &__group {
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +47,10 @@
 
     @include respond(tab-port) {
       width: calc(100% / 5 - 1.6rem);
+    }
+
+    @include respond(phone) {
+      width: calc(100% / 4 - 1.6rem);
     }
   }
 

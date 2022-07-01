@@ -22,6 +22,10 @@
     @include respond(tab-land) {
       padding: 0 1.6rem !important;
     }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   //LEFT
@@ -246,4 +250,11 @@
     var(--color-primary) 0%,
     rgba(93, 62, 188, 0) 100%
   );
+}
+
+//MOBILE RIGHT SIDE
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

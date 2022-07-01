@@ -90,3 +90,28 @@ function createCategories(data) {
 }
 
 getData();
+
+
+// FOOTER
+
+const footerButton = document.querySelectorAll('.footer__button');
+const footerList = document.querySelectorAll(".close");
+const footerArrow = document.querySelectorAll(".footer__arrow");
+
+function footerOpen() {
+    footerButton.forEach((btn, idx) => {
+        btn.addEventListener('click', () => {
+            if (footerList[idx].classList.contains('close')) {
+                footerList[idx].classList.remove('close');
+                footerList[idx].classList.add('open');
+            } else if (footerList[idx].classList.contains('open')) {
+                footerList[idx].classList.remove('open');
+                footerList[idx].classList.add('close');
+            }
+
+            footerArrow[idx].classList.toggle('footer__arrow--open');
+        })
+    })
+}
+
+footerOpen();

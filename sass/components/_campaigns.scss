@@ -9,11 +9,19 @@
     padding: 0 1.6rem;
   }
 
+  @include respond(phone) {
+    padding: 0 6px;
+  }
+
   &__flex {
     display: flex;
 
     @include respond(tab-port) {
       flex-wrap: wrap;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
     }
   }
 
@@ -30,10 +38,15 @@
       &:nth-child(2) {
         margin-left: auto;
       }
-
       &:last-child {
         margin: 2rem auto;
       }
+    }
+
+    @include respond(phone) {
+      margin: 2rem auto;
+      width: 100%;
+      height: auto;
     }
 
     img {

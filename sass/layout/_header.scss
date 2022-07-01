@@ -15,6 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(smallPhone) {
+      justify-content: center;
+    }
   }
 
   //LEFT SIDE
@@ -29,6 +33,10 @@
     display: flex;
     padding: 1.2rem 2rem;
     border-radius: 6px 6px 0 0;
+
+    @include respond(phone) {
+      padding: 1.2rem 1.5rem;
+    }
     &--active {
       background-color: var(--color-primary);
     }
@@ -39,6 +47,12 @@
 
     &:not(:last-child) {
       margin-right: 1px;
+    }
+  }
+
+  @include respond(smallPhone) {
+    &__logo:not([class*='active']) {
+      display: none;
     }
   }
 
@@ -56,6 +70,10 @@
   &__right {
     display: flex;
     height: 100%;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__group {
