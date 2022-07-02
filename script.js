@@ -77,13 +77,12 @@ async function getData() {
 function createCategories(data) {
     const html = `
     <div class="categories__item">
-    <div class="categories__photo">
-        <img
-        src="${data.image}"
-        alt="${data.title}"
-    />
-    </div>
-    <span class="categories__name">${data.title}</span>
+        <div class="categories__photo">
+            <img
+            src="${data.image}"
+            alt="${data.title}"/>
+        </div>
+        <span class="categories__name">${data.title}</span>
   </div>
     `;
     categories__group.innerHTML += html;
@@ -115,3 +114,4 @@ function footerOpen() {
 }
 
 footerOpen();
+

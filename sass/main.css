@@ -88,7 +88,7 @@ body {
 }
 
 .banner__flex {
-  z-index: 9999;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
